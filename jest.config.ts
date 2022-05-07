@@ -71,9 +71,7 @@ export default {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  // moduleDirectories: [
-  //   "node_modules"
-  // ],
+  // moduleDirectories: ['node_modules'],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [
@@ -103,7 +101,7 @@ export default {
   // preset: undefined,
 
   // Run tests from one or more projects
-  // projects: [],
+  projects: ['server']
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
@@ -173,9 +171,9 @@ export default {
   // testRunner: "jest-circus/runner",
 
   // A map from regular expressions to paths to transformers
-  transform: {
-    '^.+\\.(t|j)sx?$': ['@swc/jest']
-  }
+  // transform: {
+  //   '^.+\\.(t|j)sx?$': ['@swc/jest']
+  // }
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
