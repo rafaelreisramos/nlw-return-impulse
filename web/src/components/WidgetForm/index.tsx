@@ -42,7 +42,7 @@ export function WidgetForm() {
   }
 
   return (
-    <div className="relative mb-4 flex w-[calc(100vw-2rem)] flex-col items-center rounded-2xl bg-zinc-900 p-4 shadow-lg md:w-auto">
+    <div className="relative mb-4 flex w-[calc(100vw-2rem)] flex-col items-center rounded-2xl bg-white p-4 shadow-lg dark:bg-zinc-900 md:w-auto">
       {feedbackSent ? (
         <FeedbackSuccessStep
           onFeedbackRestartRequested={handleRestarFeedback}
@@ -61,7 +61,7 @@ export function WidgetForm() {
         </>
       )}
 
-      <footer className="text-xs text-neutral-400">
+      <footer className="text-xs text-zinc-500 dark:text-zinc-400">
         Feito com ♥ pela{' '}
         <a
           className="underline underline-offset-2"
