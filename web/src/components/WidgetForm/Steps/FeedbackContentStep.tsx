@@ -63,7 +63,7 @@ export function FeedbackContentStep({
       <div className="flex w-full gap-2 py-8">
         <form onSubmit={handleSubmitFeedback} className="my-4 w-full">
           <textarea
-            className="min-h-[112px] w-full min-w-[304px] resize-none rounded-md border-zinc-600 bg-transparent text-sm text-zinc-100 placeholder-zinc-400 scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            className="min-h-[112px] w-full min-w-[304px] resize-none rounded-md border-zinc-600 bg-transparent text-sm text-zinc-100 placeholder-zinc-400 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
             onChange={(event) => setComment(event.target.value)}
           />
 
