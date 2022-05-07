@@ -75,7 +75,7 @@ export function FeedbackContentStep({
 
             <button
               type="submit"
-              className="flex flex-1 items-center justify-center rounded-md border-transparent bg-brand-500 p-2 text-sm transition-colors hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white disabled:opacity-50 disabled:hover:bg-brand-500 dark:focus:ring-offset-zinc-900"
+              className="flex flex-1 items-center justify-center rounded-md border-transparent bg-brand-500 p-2 text-sm text-white transition-colors hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white disabled:opacity-50 disabled:hover:bg-brand-500 dark:focus:ring-offset-zinc-900"
               disabled={comment.length === 0 || isSendindFeedback}
             >
               {isSendindFeedback ? <Loading /> : 'Enviar feedback'}
