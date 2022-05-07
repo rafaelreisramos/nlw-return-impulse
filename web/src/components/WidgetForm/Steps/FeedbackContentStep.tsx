@@ -42,7 +42,7 @@ export function FeedbackContentStep({
       <header>
         <button
           type="button"
-          className="absolute top-5 left-5 text-zinc-100 hover:text-zinc-400"
+          className="absolute top-5 left-5 text-zinc-800 hover:text-zinc-500 dark:text-zinc-100 dark:hover:text-zinc-400"
           onClick={onFeedbackRestartRequested}
         >
           <ArrowLeft weight="bold" className="h-4 w-4" />
@@ -63,7 +63,7 @@ export function FeedbackContentStep({
       <div className="flex w-full gap-2 py-8">
         <form onSubmit={handleSubmitFeedback} className="my-4 w-full">
           <textarea
-            className="min-h-[112px] w-full min-w-[304px] resize-none rounded-md border-zinc-600 bg-transparent text-sm text-zinc-100 placeholder-zinc-400 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            className="focus:border-brand-400 min-h-[112px] w-full min-w-[304px] resize-none rounded-md border-zinc-300 bg-transparent text-sm text-zinc-800 placeholder-zinc-500 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-200 focus:outline-none focus:ring-1 focus:ring-brand-500 dark:border-zinc-600 dark:text-zinc-100 dark:placeholder-zinc-400 dark:scrollbar-thumb-zinc-700 dark:focus:border-brand-500"
             onChange={(event) => setComment(event.target.value)}
           />
 
@@ -75,7 +75,7 @@ export function FeedbackContentStep({
 
             <button
               type="submit"
-              className="flex flex-1 items-center justify-center rounded-md border-transparent bg-brand-500 p-2 text-sm transition-colors hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-zinc-900 disabled:opacity-50 disabled:hover:bg-brand-500"
+              className="flex flex-1 items-center justify-center rounded-md border-transparent bg-brand-500 p-2 text-sm transition-colors hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white disabled:opacity-50 disabled:hover:bg-brand-500 dark:focus:ring-offset-zinc-900"
               disabled={comment.length === 0 || isSendindFeedback}
             >
               {isSendindFeedback ? <Loading /> : 'Enviar feedback'}

@@ -19,7 +19,7 @@ export function FeedbackTypeStep({
           return (
             <button
               key={key}
-              className="w-24 flex-1 flex-col items-center gap-2 rounded-lg border-2 border-transparent bg-zinc-800 py-8 hover:border-brand-500 focus:border-brand-500 focus:outline-none"
+              className="w-24 flex-1 flex-col items-center gap-2 rounded-lg border-2 border-transparent bg-zinc-100 py-8 hover:border-brand-500 focus:border-brand-500 focus:outline-none dark:bg-zinc-800"
               onClick={() => onFeedbackTypeChange(key as FeedbackType)}
             >
               <img src={value.image.src} alt={value.image.alt} />

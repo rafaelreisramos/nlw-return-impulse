@@ -36,7 +36,7 @@ export function FeedbackSuccessStep({
         <button
           type="submit"
           onClick={onFeedbackRestartRequested}
-          className="tex-sm mt-6 rounded-md border-transparent bg-zinc-800 py-2 px-6 leading-6 transition-colors hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+          className="tex-sm mt-6 rounded-md border-transparent bg-zinc-100 py-2 px-6 leading-6 transition-colors hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-white dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:focus:ring-offset-zinc-900"
         >
           Quero enviar outro
         </button>
