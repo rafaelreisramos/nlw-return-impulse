@@ -73,8 +73,11 @@ server$ npx prisma migrate dev
 # Iniciar o server
 server$ npm run dev
 
-# Iniciar o projeto do app web
+# Configurar o arquivo .env.local com as variáveis de ambiente
 $ cd web
+web$ cp .env.example .env.local
+
+# Iniciar o projeto do app web
 web$ npm run dev
 
 # TODO: Iniciar o projeto mobile
