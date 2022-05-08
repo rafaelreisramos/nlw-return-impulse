@@ -1,11 +1,7 @@
 import dotenv from 'dotenv'
-import { expand } from 'dotenv-expand'
-expand(dotenv.config())
 import express from 'express'
 import cors from 'cors'
 import { routes } from './routes'
-
-console.log(process.env)
 
 const app = express()
 app.use(cors())
