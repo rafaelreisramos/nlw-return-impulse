@@ -32,10 +32,10 @@ Este foi um projeto desenvolvido durante a **[Next Level Return](https://lp.rock
 
 ## A milha extra
 
-- [x] O projeto tem uma branch **preffer-color-scheme** com as classes de css do tailwind ajustadas para que o modo **dark** ou **light** seja selecionado automaticamente baseado nas configurações do usuário.
+- [x] O projeto tem uma branch **prefers-color-scheme** com as classes de css do tailwind ajustadas para que o modo **dark** ou **light** seja selecionado automaticamente baseado nas configurações do usuário.
 - [x] O projeto também foi atualizado para usar um **banco de dados Postgres** com um arquivo docker compose para facilitar o setup do ambiente de desenvolvimento.
-- [ ] TODO: Melhorar design do e-mail
-- [ ] Dashboard de feedbacks
+- [ ] **TODO**: Melhorar design do e-mail
+- [ ] **TODO**: Dashboard de feedbacks
 
 ## 🚀 Como executar
 
@@ -55,7 +55,8 @@ Para iniciar o projeto siga os passos abaixo:
 # Instalar as dependências
 $ npm install
 
-# Para o projeto mobile é necessário instalar separadamente por ele ainda não estar integrado ao npm workspaces
+# Para o projeto mobile é necessário instalar separadamente por ele ainda não
+# estar integrado ao npm workspaces
 $ cd mobile
 mobile$ npm install
 
