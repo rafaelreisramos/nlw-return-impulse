@@ -30,17 +30,20 @@ Feedget é um Widget de feedback.
 Este foi um projeto desenvolvido durante a **[Next Level Return](https://lp.rocketseat.com.br/nlw-return)**, apresentada entre os dias
 2 e 6 de Maio de 2022.
 
-Modo dark desenvolvido no [NLW Return](https://lp.rocketseat.com.br/nlw-return)
+**Modo dark**(versão Web) desenvolvido no [NLW Return](https://lp.rocketseat.com.br/nlw-return)
+
 ![Feedget modo dark](.github/dark-mode.gif)
 
 ## A milha extra
 
 - [x] O projeto tem uma branch **prefers-color-scheme** com as classes de css do tailwind ajustadas para que o modo **dark** ou **light** seja selecionado automaticamente baseado nas configurações do usuário.
 - [x] O projeto também foi atualizado para usar um **banco de dados Postgres** com um arquivo docker compose para facilitar o setup do ambiente de desenvolvimento.
-- [ ] **TODO**: Melhorar design do e-mail
+- [x] O design do e-mail foi melhorado. O texto foi centralizado e o título, comentário e screenshot separados. O tamanho da imagem foi ajustado para caber dentro da largura especificada para o o corpo do e-mail de 660px. Para um design mais avançado e personalizado com informações do cliente pode ser usado o [handlebars](https://handlebarsjs.com/))
 - [ ] **TODO**: Dashboard de feedbacks
 
-Modo light desenvolvido usando a chave `dark:` no Tailwindcss
+**Modo light**(versão Web) desenvolvido usando a chave `dark:` no Tailwindcss para as cores do modo escuro e configurando novas cores conforme o design
+para o modo claro.
+
 ![Feedget modo light](.github/light-mode.gif)
 
 ## 🚀 Como executar
