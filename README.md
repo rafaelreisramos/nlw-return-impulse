@@ -56,7 +56,7 @@ $ cd nlw-return-impulse
 ```
 
 - É necessário que você tenha o [Docker Compose](https://docs.docker.com/compose/install/) instalado.
-- Para verificar o envio do e-mail e completar os dados necessários das variáveis de ambiente é necessária a criação de uma conta no [Mailtrap](https://mailtrap.io/).
+- Para verificar o envio do e-mail e completar os dados necessários das variáveis de ambiente sugiro a criação de uma conta no [Mailtrap](https://mailtrap.io/).
 
 Para iniciar o projeto siga os passos abaixo:
 
