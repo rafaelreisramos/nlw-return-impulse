@@ -1,5 +1,6 @@
 import { MailAdapter } from '../adapters/mail-adapter'
 import { FeedbacksRepository } from '../repositories/feedbacks-repository'
+import { formatComment } from '../utils/format-comment'
 
 interface SubmitFeedbackUseCaseRequest {
   type: string
@@ -34,6 +35,8 @@ export class SubmitFeedbackUseCase {
       screenshot
     })
 
+    const paragraphs = formatComment(comment)
+
     await this.mailAdapter.sendMail({
       subject: 'Novo feedback',
       body: [
@@ -42,7 +45,7 @@ export class SubmitFeedbackUseCase {
         `<p>${type}</p>`,
         `<hr />`,
         `<p><b>Comentário</b></p>`,
-        `<p><small>${comment}</small></p>`,
+        `<small>${paragraphs}</small>`,
         `<hr />`,
         `<p><b>Captura da tela</b></p>`,
         `<br />`,
