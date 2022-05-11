@@ -7,8 +7,7 @@
     "test": "jest",
     "server:build": "npm run build --workspace=server",
     "server:start": "npm run start --workspace=server",
-    "server:migrations:dev": "npm run migrations:dev --workspace=server",
-    "server:migrations:deploy": "npm run migrations:deploy --workspace=server",
+    "server:deploy": "npm run migrations:deploy --workspace=server && npm run start --workspace=server",
     "web:build": "npm run build --workspace=web"
   },
   "keywords": [],
