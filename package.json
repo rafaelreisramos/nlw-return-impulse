@@ -8,7 +8,7 @@
     "build": "npm run build --workspaces --if-present",
     "server:build": "npm run build --workspace=server",
     "server:start": "npm run start --workspace=server",
-    "server:deploy": "npm run migrations:deploy --workspace=server && npm run start --workspace=server",
+    "server:deploy": "npm run generate --workspace=server && npm run migrations:deploy --workspace=server && npm run start --workspace=server",
     "web:build": "npm run build --workspace=web"
   },
   "keywords": [],
