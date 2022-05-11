@@ -34,7 +34,7 @@ export function FeedbackContentStep({
       comment,
       screenshot
     }
-    // await api.post('/feedbacks', feedback)
+    await api.post('/feedbacks', feedback)
     setIsSendingFeedback(false)
 
     addFeedback(feedback)
