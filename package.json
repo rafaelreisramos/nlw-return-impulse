@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "server:build": "npm run build --workspace=server",
+    "server:start": "npm run start --workspace=server",
+    "server:migrations": "npm run migrations --workspace=server",
+    "web:build": "npm run build --workspace=web"
   },
   "keywords": [],
   "author": "",
