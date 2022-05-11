@@ -1,5 +1,5 @@
-import { Widget } from './components/Widget'
+import { Dashboard } from './pages/Dashboard/Dashboard'
 
 export function App() {
-  return <Widget />
+  return <Dashboard />
 }

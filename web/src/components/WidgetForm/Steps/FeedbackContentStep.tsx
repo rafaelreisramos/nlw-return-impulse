@@ -4,7 +4,8 @@ import { FeedbackType, feedbackTypes } from '..'
 import { api } from '../../../libs/axios'
 import { CloseButton } from '../../CloseButton'
 import { Loading } from '../../Loading'
-import { ScreenshotButton } from '../ScrenshotButton'
+import { ScreenshotButton } from '../ScreenshotButton'
+import { useFeedback } from '../../../contexts/Feedback'
 
 type FeedbackContentStepProps = {
   feedbackType: FeedbackType
@@ -20,6 +21,7 @@ export function FeedbackContentStep({
   const [screenshot, setScreenshot] = useState<string | null>(null)
   const [comment, setComment] = useState('')
   const [isSendindFeedback, setIsSendingFeedback] = useState(false)
+  const { addFeedback } = useFeedback()
 
   const feedbackTypeInfo = feedbackTypes[feedbackType]
 
@@ -27,13 +29,15 @@ export function FeedbackContentStep({
     event.preventDefault()
 
     setIsSendingFeedback(true)
-    await api.post('/feedbacks', {
+    const feedback = {
       type: feedbackType,
       comment,
       screenshot
-    })
+    }
+    // await api.post('/feedbacks', feedback)
     setIsSendingFeedback(false)
 
+    addFeedback(feedback)
     onFeedbackSent()
   }
 
