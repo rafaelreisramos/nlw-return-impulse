@@ -32,7 +32,6 @@ export default function FeedbacksProvider({
 
   const addFeedback = (feedback: Feedback) => {
     setFeedbacks([...feedbacks, feedback])
-    console.log(feedback)
   }
   return (
     <FeedbacksContext.Provider value={{ feedbacks, addFeedback }}>
