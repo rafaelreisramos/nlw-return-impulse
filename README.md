@@ -37,12 +37,14 @@ Este foi um projeto desenvolvido durante a **[Next Level Return](https://lp.rock
 ## A milha extra
 
 - [x] O modo **dark** ou **light** seja selecionado automaticamente baseado nas configurações do usuário. (Observação: no meu Ubuntu 20.04 LTS com Gnome o Google Chrome não segue o modo do sistema. Já o Firefox funciona perfeitamente)
-      ![Feedget modo light](.github/light-mode.gif)
+
+![Feedget modo light](.github/light-mode.gif)
 
 - [x] O projeto também foi atualizado para usar um **banco de dados Postgres** com um arquivo docker compose para facilitar o setup do ambiente de desenvolvimento.
 
 - [x] O design do e-mail foi melhorado. O texto foi centralizado e o título, comentário e screenshot separados. O tamanho da imagem foi ajustado para caber dentro da largura especificada para o o corpo do e-mail de 660px. Para um design mais avançado e personalizado com informações do cliente pode ser usado o [handlebars](https://handlebarsjs.com/))
-      ![E-mail template](.github/email-template.gif)
+
+![E-mail template](.github/email-template.gif)
 
 - [x] Dashboard de feedbacks: aqui foi desenvolvido apenas como demonstração do uso do React Context para compartilhar a informação dos feedbacks entre o Widget e o Dashboard. Em uma aplicação real a página de Dashboard seria autenticada e os dados viriam de uma chamada externa à uma api.
 
